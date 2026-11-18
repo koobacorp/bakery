@@ -1,0 +1,11 @@
+build/
+JUCE/
+shots/
+demos/
+pkg/
+*.zip
+.DS_Store
+dist/*.png
+dist/*.zip
+dist/ci/
+dist/

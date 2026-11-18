@@ -1,0 +1,31 @@
+BAKERY v1.0.0 - koobacorp drum synth
+macOS 11 or newer - Apple Silicon + Intel (universal) - VST3 + AU instrument
+
+INSTALL (when you decide to)
+1. Close FL Studio.
+2. Open Terminal, drag install_mac.sh from this folder into it, press Return.
+   It asks for your Mac password (the system plug-in folders need it), asks
+   before replacing an old BAKERY, and moves any old copy to your Desktop.
+   It installs:
+     BAKERY.vst3      -> /Library/Audio/Plug-Ins/VST3/
+     BAKERY.component -> /Library/Audio/Plug-Ins/Components/
+   Manual alternative: copy the two bundles into those folders in Finder
+   (Finder asks for your password).
+3. FL Studio > Options > Manage plugins > Find installed plugins.
+   BAKERY appears under Generators (manufacturer koobacorp).
+
+The bundles are ad-hoc signed, not Apple notarized. The helper removes the
+download quarantine flag for these two bundles only. Never disable macOS
+security globally.
+
+FIRST SOUND
+Add BAKERY to the Channel rack, press Play in FL: the 909 House kit groove plays
+(the sequencer follows FL's transport and tempo). Or play MIDI notes:
+C3 kick (MIDI 36), D3 snare (38), F#3 closed hat (42), A#3 open hat (46).
+Full note map, separate outputs and a beginner guide: README.md and LEARN.md.
+
+SEPARATE MIXER TRACKS IN FL
+In BAKERY's KIT MIXER set a channel's Output to "Out 2".."Out 13".
+In FL: route BAKERY to a free mixer track (Ctrl+L in the Channel rack), then
+plugin gear (wrapper settings) > Processing tab > Connections > Auto map outputs.
+Out 2 lands on the next mixer track, Out 3 on the one after. Details: README.md.
